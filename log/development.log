@@ -1,0 +1,150 @@
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2009-12-17 01:16:05) [GET]
+Rendering examples/index
+Completed in 76ms (View: 74 | 200 OK [http://localhost/examples/]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2009-12-17 01:16:07) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+##### Aws::SdbInterface returned an error: 400 Bad Request
+<?xml version="1.0"?>
+<Response><Errors><Error><Code>NoSuchDomain</Code><Message>The specified domain does not exist.</Message><BoxUsage>0.0000219907</BoxUsage></Error></Errors><RequestID>7d4e9b03-fa92-0a87-89b5-260aca59de39</RequestID></Response> #####
+##### Aws::SdbInterface request: sdb.amazonaws.com:443/?AWSAccessKeyId=AKIAIZN5E467E5L747VA&Action=PutAttributes&Attribute.0.Name=first_name&Attribute.0.Replace=true&Attribute.0.Value=Chad&Attribute.1.Name=last_name&Attribute.1.Replace=true&Attribute.1.Value=Arimura&Attribute.2.Name=is_cool&Attribute.2.Replace=true&Attribute.2.Value=Sometimes%21&Attribute.3.Name=created&Attribute.3.Replace=true&Attribute.3.Value=2009-12-17T09%3A16%3A07&Attribute.4.Name=updated&Attribute.4.Replace=true&Attribute.4.Value=2009-12-17T09%3A16%3A07&Attribute.5.Name=id&Attribute.5.Replace=true&Attribute.5.Value=cf26eaf8-eaec-11de-932a-001ec2b4ab49&DomainName=myproject_prod_users&ItemName=cf26eaf8-eaec-11de-932a-001ec2b4ab49&SignatureMethod=HmacSHA1&SignatureVersion=2&Timestamp=2009-12-17T09%3A16%3A07.000Z&Version=2009-04-15&Signature=PEDVYO2COhf1NPiU%2BWkj06U8h9I%3D ####
+Rendering examples/simple_record
+Completed in 7022ms (View: 19 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2009-12-17 01:16:20) [GET]
+Rendering examples/simple_record
+Completed in 265ms (View: 1 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2009-12-17 01:16:23) [GET]
+Rendering examples/simple_record
+Completed in 351ms (View: 1 | 200 OK [http://localhost/examples/simple_record]
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 14:02:38) [GET]
+Rendering examples/index
+Completed in 59ms (View: 58 | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 14:02:52) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 744ms (View: 34 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#simple_worker (for 127.0.0.1 at 2010-01-02 14:03:00) [GET]
+
+ActionView::MissingTemplate (Missing template examples/simple_worker.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 14:03:02) [GET]
+
+ActionView::MissingTemplate (Missing template examples/cloud_cache.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 14:24:52) [GET]
+Rendering examples/cloud_cache
+Completed in 17ms (View: 15 | 200 OK [http://localhost/examples/cloud_cache]
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 14:24:56) [GET]
+Rendering examples/cloud_cache
+Completed in 4ms (View: 2 | 200 OK [http://localhost/examples/cloud_cache]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 14:24:57) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 756ms (View: 17 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 14:25:30) [GET]
+Rendering examples/index
+Completed in 3ms (View: 1 | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 14:26:10) [GET]
+Rendering examples/index
+Completed in 16ms (View: 14 | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 14:26:13) [GET]
+Rendering examples/cloud_cache
+Completed in 3ms (View: 1 | 200 OK [http://localhost/examples/cloud_cache]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 14:26:16) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 631ms (View: 17 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 14:26:53) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 578ms (View: 1 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 14:27:36) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 602ms (View: 10 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 14:27:38) [GET]
+Rendering examples/index
+Completed in 4ms (View: 2 | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 14:27:39) [GET]
+Rendering examples/cloud_cache
+Completed in 15ms (View: 13 | 200 OK [http://localhost/examples/cloud_cache]
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 14:27:40) [GET]
+Rendering examples/index
+Completed in 4ms (View: 2 | 200 OK [http://localhost/examples]
+New Aws::SdbInterface using per_thread-connection mode
+New Aws::S3Interface using per_request-connection mode
+
+
+Processing ExamplesController#index (for 127.0.0.1 at 2010-01-02 15:45:03) [GET]
+Rendering examples/index
+Completed in 46ms (View: 44 | 200 OK [http://localhost/examples]
+
+
+Processing ExamplesController#simple_record (for 127.0.0.1 at 2010-01-02 15:45:04) [GET]
+Opening new HTTPS connection to sdb.amazonaws.com:443
+Rendering examples/simple_record
+Completed in 668ms (View: 17 | 200 OK [http://localhost/examples/simple_record]
+
+
+Processing ExamplesController#cloud_cache (for 127.0.0.1 at 2010-01-02 15:45:07) [GET]
+Rendering examples/cloud_cache
+Completed in 809ms (View: 18 | 200 OK [http://localhost/examples/cloud_cache]
